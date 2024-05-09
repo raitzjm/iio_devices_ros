@@ -1,0 +1,1 @@
+SUBSYSTEM=="iio", KERNEL=="iio:device[0-9]*", ACTION=="add", OWNER="farms", PROGRAM="/bin/sh -c 'chown -R farms /sys%p'"
